@@ -7,6 +7,7 @@
     <title>About.Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -44,7 +45,16 @@
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/coffe.house.webp) center/cover no-repeat;"
        class="relative h-screen flex justify-center  items-center -mt-20">
        <div class="text-white text-center">
-           <h2 class="text-5xl md:text-7xl text-center mb-6">Artisanal Coffee Experience</h2>
+           <h2     data-aos="fade-right"
+           data-aos-offset="200"
+           data-aos-delay="100"
+           data-aos-duration="1000"
+           data-aos-easing="ease-in-out"
+           data-aos-mirror="true"
+           data-aos-once="false"
+           data-aos-anchor-placement="top-center"
+       
+            class="text-5xl md:text-7xl text-center mb-6">Artisanal Coffee Experience</h2>
            <p class="text-center text-xl md:text-2xl mb-6 text-yellow-400">Where every cup tells a story</p>
             <div>
                 <a class="bg-orange-300 hover:bg-orange-900 text-black hover:text-white  py-2  px-6 rounded-3xl mt-8 text-sm md:text-base" href="#">Explore</a>
@@ -189,7 +199,11 @@
         </div>
     </footer>
 
-
     <script src="resturant.js"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
